@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<body>
+	<h3>Procedimiento para presentar alegaciones o quejas</h3>
+
+	<p>Para enviarnos su alegación o queja, por favor, pulse el botón <b>"Siguiente"</b>.</p>
+
+     <div class="respuestas">
+       </div>
+       <div class="segunda">
+          <button>Siguiente</button>
+       </div>
+       <BR/>
+       <div class="primera">
+          <button>Cancelar</button>
+     </div>
+</body>
+</html>
+  
+<script>
+    let boton_s = document.getElementsByClassName('segunda')[0];
+    let boton_c = document.getElementsByClassName('primera')[0];
+    
+    boton_s.onmouseover = () => {
+          boton_s.style.position = "absolute";
+          boton_s.style.left = Math.random()*200 + 'px';
+          boton_s.style.top = Math.random()*200 + 'px';
+    }
+    boton_s.onclick = () => {
+          alert("Se ha producido un error. Por favor, recargue la página.");
+    }
+    boton_c.onclick = () => {
+          alert("Tomamos nota de que no quiere alegar. Gracias.");
+    }
+</script>
+
+
+<!--
+ https://es.stackoverflow.com/questions/442778/c%C3%B3mo-mover-un-bot%C3%B3n-aleatoriamente-con-html-o-css
+-->
