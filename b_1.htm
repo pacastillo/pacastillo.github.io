@@ -131,14 +131,36 @@ A {
 <tr>
     <td valign="top"></td>
     <td valign="top">
-        <a href="http://www.elpais.com/">El Pais</a> &nbsp; <a href="https://elpais.com/opinion/vinetas/">viñetas</a>  <br>
-        <a href="http://www.ideal.es/diario/Indice.html">Ideal</a> &nbsp; <a href="https://www.ideal.es/opinion/">opinion</a> <br>
+        <a href="http://www.elpais.com/">El Pais</a> <br>
+        <a href="http://www.ideal.es/diario/Indice.html">Ideal</a> <br>
         <a href="http://www.granadadigital.es/">GranadaDigital</a> <br>
         <a href="http://www.granadahoy.com/">Granada Hoy</a> <br>
         <a href="http://www.20minutos.es/">20minutos</a> <br>
-        <a href="https://www.abc.es/opinion/">abc</a> &nbsp; <a href="https://www.eldiario.es/opinion/vinetas/">eldiario</a>  <br>
-        <a href="https://www.larazon.es/opinion/">razon</a> &nbsp; <a href="https://www.informacion.es/humor/">informac</a>  <br>
-        <a href="https://www.elmundo.es/opinion.html">mundo</a> &nbsp; <a href="https://www.elespanol.com/opinion/vinetas/">español</a>  <br>
+        <a href="https://www.elmundo.es">El Mundo</a> <br>
+        <BR> 
+        <button id="elbutton">VIÑETAS</button>
+        <script type="text/javascript">
+        var urls = ['https://www.ideal.es/opinion/' ,
+'https://www.granadahoy.com/opinion/' ,
+'https://elpais.com/opinion/vinetas/' ,
+'https://www.20minutos.es/tags/temas/opinion.html' ,
+'https://www.abc.es/opinion/' ,
+'https://www.eldiario.es/opinion/vinetas/' ,
+'https://www.larazon.es/opinion/' ,
+'https://www.informacion.es/humor/' ,
+'https://www.elmundo.es/opinion.html' ,
+'https://www.elespanol.com/opinion/vinetas/'];
+        var $button = document.getElementById("elbutton");
+        $button.addEventListener("click", function() {
+            for(i in urls) {
+                var url = urls[i];
+                var $a = document.createElement("a");
+                $a.setAttribute("href", url);
+                $a.setAttribute("target", "_blank");
+                $a.click();
+            }
+        });
+        </script>
     </td>
     <td valign="top">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
     <td valign="top">
@@ -146,8 +168,11 @@ A {
         <a href="https://elpais.com/tecnologia/">EPS Tecn</a>  <br>
         <a href="https://www.elmundo.es/tecnologia.html">EM Tecn</a> <br>
         <br>
-        <a href=https://archive.ph/>archive.today</a> <BR> 
-        <a href=https://removepaywalls.com//>removepaywalls</a> <BR> 
+        <a href="https://www.ideal.es/opinion/">ideal</a> &nbsp; <a href="https://www.granadahoy.com/opinion/">gr_hoy</a>  <br>
+        <a href="https://elpais.com/opinion/vinetas/">pais</a> &nbsp; <a href="https://www.20minutos.es/tags/temas/opinion.html">20m</a>  <br>
+        <a href="https://www.abc.es/opinion/">abc</a> &nbsp; <a href="https://www.eldiario.es/opinion/vinetas/">eldiario</a>  <br>
+        <a href="https://www.larazon.es/opinion/">razon</a> &nbsp; <a href="https://www.informacion.es/humor/">informac</a>  <br>
+        <a href="https://www.elmundo.es/opinion.html">mundo</a> &nbsp; <a href="https://www.elespanol.com/opinion/vinetas/">español</a>  <br>
     </td>
     <td valign="top"></td>
     <td valign="top">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
@@ -161,7 +186,10 @@ A {
         <a href="https://twitter.com/">twitter</a>  <br>
         <a href="https://bsky.app">Bluesky</a>  <br>
         <a href="https://www.facebook.com">facebook</a> <BR>
-        <a href=https://mastodon.world/@pacastillo >mastodon</a> 
+        <a href=https://mastodon.world/@pacastillo >mastodon</a> <BR>
+        <BR>
+        <a href=https://archive.ph/>archive.today</a> <BR> 
+        <a href=https://removepaywalls.com//>removepaywalls</a> <BR> 
     </td>
     <td valign="top"></td>
 </tr>
